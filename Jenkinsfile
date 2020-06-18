@@ -3,6 +3,6 @@ node{
     git 'https://github.com/gauravkumar9130/maven-project' 
     }
    stage('Compile-and-build'){
-    sh 'mvn package'
+    sh '/opt/maven/bin/mvn package'
     }
  }
