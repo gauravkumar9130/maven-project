@@ -27,7 +27,7 @@ jobs:
       with:
           local: /home/runner/work/maven-project/maven-project/target/
           remote: scp/directory
-          host: 18.222.193.82
+          host: 3.134.99.229
           username: root
           password: redhat
     - name: commands
@@ -39,6 +39,6 @@ jobs:
         zip /zip/javafiles.zip /jarfiles/*
         yum install java-1.8.0-openjdk* -y
         java -jar /root/scp/directory/*.jar
-       host: 18.222.193.82
+       host: 3.134.99.229
        username: root
        password: redhat
