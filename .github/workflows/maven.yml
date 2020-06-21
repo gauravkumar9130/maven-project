@@ -27,7 +27,7 @@ jobs:
       with:
         host: 18.222.193.82
         username: root
-        key: ${{ secrets.gaurav }}
+        key: ${{ secrets.GAURAV }}
         port: 22	
         script: |
           yum install git -y
