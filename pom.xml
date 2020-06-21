@@ -6,4 +6,5 @@
 <groupId>com.gauravkumar</groupId>
 <artifactId>hello-world</artifactId>
 <version>1.0.0</version>
+<mainClass>com.gaurav.Demo</mainClass>
 </project>
