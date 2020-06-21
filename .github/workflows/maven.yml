@@ -36,7 +36,7 @@ jobs:
        command: |
         mkdir /jarfiles /zip
         cp -rvf /root/scp/directory/*.jar /jarfiles/
-        zip /zip/javafiles.zip /jarfiles
+        zip /zip/javafiles.zip /jarfiles/*
        host: 18.222.193.82
        username: root
        password: redhat
