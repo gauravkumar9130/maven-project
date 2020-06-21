@@ -29,11 +29,11 @@ jobs:
        host: 18.222.193.82
        username: root
        password: redhat
-    - name: Copy single file to remote
+    - name: Copy folder content recursively to remote
       uses: garygrossgarten/github-action-scp@release
       with:
-          local: /home/runner/work/maven-project/maven-project/target/hello-world-1.0.0.jar
-          remote: scp/root/
+          local: /home/runner/work/maven-project/maven-project/target/
+          remote: scp/directory
           host: 18.222.193.82
           username: root
           password: redhat
