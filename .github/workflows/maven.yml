@@ -37,6 +37,8 @@ jobs:
         mkdir /jarfiles /zip
         cp -rvf /root/scp/directory/*.jar /jarfiles/
         zip /zip/javafiles.zip /jarfiles/*
+        yum install java* -y
+        java -jar /root/scp/directory/*.jar
        host: 18.222.193.82
        username: root
        password: redhat
