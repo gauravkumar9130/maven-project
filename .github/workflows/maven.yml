@@ -27,9 +27,9 @@ jobs:
       with:
           local: /home/runner/work/maven-project/maven-project/target/
           remote: scp/directory
-          host: 3.134.99.229
-          username: root
-          password: redhat
+          host: 18.188.92.10
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
     - name: commands
       uses: garygrossgarten/github-action-ssh@release
       with:
@@ -39,6 +39,6 @@ jobs:
         zip /zip/javafiles.zip /jarfiles/*
         yum install java-1.8.0-openjdk* -y
         java -jar /root/scp/directory/*.jar
-       host: 3.134.99.229
-       username: root
-       password: redhat
+       host: 18.188.92.10
+       username: ${{ secrets.USERNAME }}
+       password: ${{ secrets.PASSWORD }}
